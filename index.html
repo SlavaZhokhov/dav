@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DaVinci</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/css.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <!-- <link rel="stylesheet" href="css/lightbox.min.css"> -->
+</head>
+<body >   
+  <svg style="display: none;">
+      <symbol id="tt" dominant-baseline="central">
+        <path d="M14.7704 25.5314C14.3944 25.4791 14.013 25.4505 13.6438 25.371C11.553 24.9203 9.92128 23.2057 9.66042 21.2033C9.31242 18.5315 11.229 16.1233 14.0556 15.6809C14.6173 15.593 15.3521 15.5952 15.7104 15.6879C15.7104 16.5545 15.7104 17.4236 15.7104 18.3088C15.5695 18.2834 15.4373 18.254 15.3033 18.2359C13.7241 18.0242 12.3676 19.1689 12.4193 20.6679C12.4601 21.8517 13.4701 22.8278 14.7567 22.9276C15.9841 23.0228 17.1587 22.1805 17.3838 21.0342C17.4227 20.8357 17.4341 20.6302 17.4344 20.4279C17.4393 16.8666 17.4404 13.3053 17.443 9.74398C17.443 9.66603 17.4507 9.58808 17.455 9.51041C18.3721 9.51041 19.2893 9.51041 20.2061 9.51041C20.2664 11.7285 22.0155 13.4253 24.3458 13.5186C24.489 13.5243 24.5044 13.578 24.5038 13.6883C24.5004 14.4443 24.5021 15.2006 24.5021 15.9566C24.5021 16.0073 24.5021 16.0577 24.5021 16.1238C22.9055 16.1173 21.4952 15.6548 20.2093 14.7553C20.2093 14.8394 20.209 14.8942 20.2093 14.9489C20.215 16.7792 20.2224 18.6095 20.2241 20.4398C20.2244 20.6944 20.2081 20.9509 20.1758 21.2036C19.9155 23.2542 18.1998 25.0012 16.0493 25.4033C15.7367 25.4618 15.4175 25.4894 15.1016 25.5312C14.9913 25.5314 14.8807 25.5314 14.7704 25.5314Z"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M17 31C24.732 31 31 24.732 31 17C31 9.26801 24.732 3 17 3C9.26801 3 3 9.26801 3 17C3 24.732 9.26801 31 17 31ZM17 34C26.3888 34 34 26.3888 34 17C34 7.61116 26.3888 0 17 0C7.61116 0 0 7.61116 0 17C0 26.3888 7.61116 34 17 34Z"/>
+      </symbol>
+
+      <symbol id="wa">
+        <path d="M0.761513 32.2932C1.00227 31.3936 1.23033 30.5393 1.45954 29.6856C1.93413 27.9164 2.41506 26.1484 2.87637 24.3751C2.92083 24.2046 2.9012 23.9718 2.81864 23.8189C-1.42148 15.955 1.55076 6.05962 9.38608 1.98448C18.0459 -2.51987 28.5728 2.00976 31.4255 11.4677C33.944 19.8167 29.313 28.7572 21.1082 31.3183C17.0338 32.5901 13.08 32.192 9.27291 30.2406C9.12627 30.1653 8.9138 30.1442 8.75445 30.1865C6.20657 30.8538 3.66216 31.5359 1.11659 32.2138C1.01555 32.2414 0.911626 32.2602 0.761513 32.2932ZM4.50337 28.5355C6.06858 28.1175 7.56913 27.723 9.06449 27.3108C9.31853 27.2408 9.51252 27.2761 9.73711 27.4131C12.6256 29.177 15.7376 29.7585 19.0354 29.09C26.0278 27.6736 30.5601 20.7833 29.242 13.6349C27.9331 6.53293 21.0937 1.78928 14.1094 3.13982C5.37633 4.82902 0.825599 14.7479 5.21813 22.6112C5.67309 23.4256 5.76605 24.0947 5.48256 24.9531C5.10093 26.1072 4.83477 27.3002 4.50337 28.5355Z"/>
+        <path d="M11.4403 8.81363C12.1158 8.64312 12.4397 9.04822 12.6712 9.65793C13.0246 10.591 13.4108 11.5112 13.8 12.4302C13.9351 12.75 13.9235 13.0316 13.7203 13.3068C13.412 13.7248 13.1164 14.1535 12.7902 14.5562C12.5696 14.8284 12.55 15.0713 12.7267 15.3735C14.0003 17.5525 15.778 19.1288 18.0961 20.0695C18.4148 20.1989 18.6671 20.1401 18.8807 19.8678C19.2629 19.381 19.6538 18.9018 20.0325 18.412C20.3108 18.0522 20.4713 17.9628 20.8714 18.1486C21.973 18.6608 23.0654 19.1946 24.1468 19.7497C24.2807 19.8184 24.4008 20.0695 24.3979 20.2341C24.3731 21.928 23.8835 22.7394 22.1122 23.4985C21.107 23.9289 20.0631 23.8277 19.0268 23.5338C15.2653 22.4666 12.494 20.0583 10.2775 16.8834C9.58873 15.8973 8.96807 14.8808 8.70422 13.6849C8.32432 11.9639 8.73886 10.4717 9.98191 9.22696C10.3832 8.8248 10.8699 8.73425 11.4403 8.81363Z"/>    
+      </symbol>
+
+      <symbol id="inst">
+          <path d="M29.0182 8.72514C29.0182 12.5606 29.0182 16.3956 29.0182 20.231C29.0025 20.3309 28.9828 20.4298 28.9719 20.5301C28.9109 21.0928 28.8823 21.6608 28.7868 22.2177C28.48 24.0124 27.7048 25.5679 26.3122 26.7907C24.8023 28.1153 22.9852 28.6439 21.0183 28.7759C20.3358 28.8217 19.6523 28.8514 18.9687 28.8884C16.0707 28.8884 13.1721 28.8884 10.274 28.8884C10.0972 28.8733 9.92044 28.8485 9.74365 28.8441C8.58688 28.8149 7.43109 28.7701 6.29993 28.4953C3.92188 27.918 2.1525 26.5793 1.09964 24.3739C0.444682 23.002 0.246716 21.5264 0.230957 20.0288C0.198456 16.949 0.171863 13.8691 0.184175 10.7897C0.189591 9.3872 0.204365 7.97783 0.51067 6.59574C1.05335 4.14822 2.40365 2.3116 4.71719 1.22571C6.08572 0.583139 7.55667 0.392658 9.05077 0.357582C13.0381 0.264046 17.026 0.218252 21.0119 0.408734C22.1731 0.464271 23.3087 0.686419 24.3739 1.16384C27.0203 2.3496 28.411 4.45221 28.8458 7.2349C28.9237 7.72888 28.9621 8.22823 29.0182 8.72514ZM14.584 26.3605C14.5844 26.3459 14.5844 26.3313 14.5849 26.3167C15.3566 26.3167 16.1288 26.3391 16.8995 26.3118C18.5433 26.2538 20.1994 26.2733 21.8259 26.0707C24.0489 25.7935 25.5528 24.5259 26.096 22.337C26.3156 21.4523 26.3905 20.516 26.4062 19.6011C26.456 16.7259 26.4663 13.8491 26.4491 10.9734C26.4422 9.82224 26.3851 8.66327 26.2403 7.52184C25.9478 5.21462 24.5005 3.65667 22.1938 3.20019C21.2055 3.00484 20.1782 2.94638 19.1667 2.93176C16.4577 2.89328 13.7473 2.88743 11.0383 2.9191C9.77172 2.93371 8.49036 2.96538 7.24445 3.16414C5.07225 3.511 3.62789 4.78299 3.1379 6.93237C2.91876 7.89403 2.8572 8.90393 2.83455 9.89434C2.78136 12.2108 2.7661 14.5297 2.79171 16.8467C2.80943 18.4451 2.8508 20.0498 3.01035 21.6389C3.17286 23.2539 3.95488 24.5712 5.40958 25.4154C6.32062 25.9445 7.33507 26.1642 8.37759 26.2007C10.4459 26.2748 12.5152 26.3099 14.584 26.3605Z"/>
+          <path d="M14.614 21.939C10.5114 21.9298 7.17847 18.6258 7.19078 14.5814C7.20359 10.5208 10.5473 7.22761 14.6362 7.24953C18.7437 7.27145 22.0362 10.5355 22.0412 14.5892C22.0456 18.6434 18.7058 21.9483 14.614 21.939ZM9.80718 14.5911C9.8057 17.2262 11.9464 19.3473 14.6101 19.3512C17.2762 19.3551 19.4203 17.2442 19.4292 14.6072C19.4381 11.9609 17.2885 9.83053 14.612 9.83297C11.9489 9.83492 9.80866 11.9551 9.80718 14.5911Z"/>
+          <path d="M24.0646 6.93773C24.074 7.88527 23.3196 8.65596 22.3706 8.66912C21.4054 8.68227 20.6135 7.9218 20.6066 6.97427C20.5993 6.02673 21.3517 5.26237 22.3051 5.24727C23.2792 5.23216 24.0548 5.97704 24.0646 6.93773Z"/>   
+      </symbol>
+
+      <symbol id="phone">
+          <path d="M4.17577 0.0422058C4.57119 0.127603 4.95107 0.248421 5.26731 0.515774C5.312 0.553621 5.35864 0.589041 5.39993 0.629799C6.29619 1.52405 7.19634 2.41441 8.08629 3.31497C8.74743 3.98408 8.86256 4.90356 8.39719 5.66825C8.18733 6.01324 7.891 6.25585 7.51064 6.39219C6.96074 6.58967 6.53617 6.92544 6.29959 7.47228C6.14171 7.83667 6.11985 8.20786 6.22284 8.59263C6.49002 9.5946 7.04138 10.435 7.71224 11.2055C8.51669 12.1294 9.43627 12.913 10.5443 13.455C11.0063 13.6811 11.4829 13.8785 12.0172 13.8043C12.723 13.7063 13.2623 13.3628 13.5401 12.6893C13.7223 12.2477 13.9433 11.8513 14.3727 11.6005C15.0708 11.1924 15.9506 11.2453 16.5486 11.7892C17.0955 12.287 17.608 12.8222 18.1312 13.3458C18.6083 13.8232 19.1028 14.2861 19.5473 14.7927C20.1079 15.4317 20.1239 16.4313 19.6294 17.1232C19.5278 17.2648 19.4142 17.3997 19.2917 17.524C18.7671 18.0548 18.225 18.5696 17.7115 19.1116C17.1635 19.6895 16.4869 19.9418 15.7116 19.9748C14.8818 20.0102 14.0861 19.8253 13.3084 19.5623C11.7758 19.0446 10.3933 18.2401 9.08408 17.3051C6.91362 15.7553 5.01276 13.9203 3.37375 11.8188C2.16756 10.272 1.13479 8.62078 0.496477 6.75125C0.218612 5.93755 0.0315869 5.10492 0.075307 4.23493C0.113684 3.47315 0.362888 2.81035 0.931249 2.27419C1.40731 1.82391 1.87075 1.35859 2.32301 0.884536C2.72134 0.466767 3.15223 0.121296 3.74682 0.0422058C3.88964 0.0422058 4.03295 0.0422058 4.17577 0.0422058Z"/>
+      </symbol>
+  </svg>
+  <!-- <header class="header" id="header">
+   <div class="container header__inner">
+
+    <a class="logo" href="#l"> 
+      <picture class="logo__pic">
+        <img src="/images/logo.png" alt="logotype">
+      </picture>
+      <span class="logo__text">Да Винчи</span>
+    </a>
+
+
+      <ul class="social social__desktop">
+        <li class="social__list social__tt">
+          <a class="social__link" href="#tt">
+            <svg class="social__svg">
+              <use class="social__icon social__tt" href="#tt"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__list social__wa">
+          <a class="social__link" href="#wa">
+            <svg class="social__svg">
+              <use class="social__icon social__tt" href="#wa"></use>
+            </svg>
+          </a>        
+      </li>
+        <li class="social__list social__inst">
+          <a class="social__link" href="#inst">
+            <svg class="social__svg">
+              <use class="social__icon social__tt" href="#inst"></use>
+            </svg>
+          </a>
+      </li>
+      </ul>
+
+      <nav class="nav nav__desktop">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Курсы</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">О нас</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Педагоги</a>
+          </li>
+        </ul>
+      </nav>
+
+        <div class="burger__bottom" id="burger__bottom">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+
+    <a class="phone" href="tel:77774838373">
+      <svg class="phone__svg">
+        <use class="phone__icon" href="#phone"></use>
+     </svg>
+      <span class="phone__number">+7 777 483-83-73</span>
+    </a>
+
+  </div>
+
+  <div class=" container burger__menu" id="burger__menu">
+    <nav class="nav nav__mobile">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="#">Главная</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Курсы</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">О нас</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Педагоги</a>
+        </li>
+      </ul>
+    </nav>
+
+    <ul class="social social__mobile">
+      <li class="social__list social__tt">
+        <a class="social__link" href="#tt">
+          <svg class="social__svg">
+            <use class="social__icon social__tt" href="#tt"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__list social__wa">
+        <a class="social__link" href="#wa">
+          <svg class="social__svg">
+            <use class="social__icon social__tt" href="#wa"></use>
+          </svg>
+        </a>        
+    </li>
+      <li class="social__list social__inst">
+        <a class="social__link" href="#inst">
+          <svg class="social__svg">
+            <use class="social__icon social__tt" href="#inst"></use>
+          </svg>
+        </a>
+    </li>
+    </ul>
+
+    <a class="phone phone__mobile" href="tel:77774838373">
+      <svg class="phone__svg">
+        <use class="phone__icon" href="#phone"></use>
+     </svg>
+      <span class="phone__number">+7 777 483-83-73</span>
+    </a>
+  </div>
+
+  </header> -->
+
+  <main class="main">
+    <h1 class="hidden">Художественная школа Да Вични</h1>
+ 
+    <!-- <div class="hero">
+      <div class="hero__inner container">
+        <h2 class="hero__title title">Художественная школа <br>Да Винчи</h2>
+        <p class="hero__desc">Хочешь стать дизайнером или архитектором — художественная школа  лучшая возможность начать свой путь</p>
+        <form class="form hero__form" action="">
+          <input class="form__input" id="form__name" type="text" name="name" autocomplete="on" placeholder="Имя и фамилия">
+          <input class="form__input" id="form__tel" type="tel" name="tel" autocomplete="on" required placeholder="Телефон">
+          <button class="form__btn btn" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div> -->
+
+    <!-- <div class="team">
+      <div class="team__inner container">
+        <h2 class="team__title title">Наша команда</h2>
+
+        <div class="team__slick slick1">
+          <div class="slick1__item">
+            <img class="slick1__img" src="/images/Саяра.jpg" alt="" srcset="">
+            <p class="slick1__desc">Илья Косинцев</p>
+          </div>
+          <div class="slick1__item">
+            <img class="slick1__img" src="/images/Софья.jpg" alt="" srcset="">
+            <p class="slick1__desc">Илья Косинцев</p>
+          </div>
+          <div class="slick1__item">
+            <img class="slick1__img" src="/images/Елена Николаевна.jpg" alt="" srcset="">
+            <p class="slick1__desc">Илья Косинцев</p>
+          </div>
+          <div class="slick1__item">
+            <img class="slick1__img" src="/images/Оксана.jpeg" alt="" srcset="">
+            <p class="slick1__desc">Илья Косинцев</p>
+          </div>
+          <div class="slick1__item">
+            <img class="slick1__img" src="/images/ilya.jpg" alt="" srcset="">
+            <p class="slick1__desc">Илья Косинцев</p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- <div class="gallery">
+      <div class="gallery__inner container">
+        <h2 class="gallery__title title">Фотогалерея</h2>
+        <div class="gallery__slick slick2">
+
+          <div class="gallery__items slick2__item">
+            <div class="gallery__container">
+              <a class="gallery__item gallery__item-1" href="/images/gallery__1.png"><img class="gallery__img gallery__img-1" src="/images/gallery__1.png" alt=""></a>
+              <a class="gallery__item gallery__item-2" href="/images/gallery__2.png"><img class="gallery__img gallery__img-2" src="/images/gallery__2.png" alt=""></a>
+              <a class="gallery__item gallery__item-3" href="/images/gallery__3.png"><img class="gallery__img gallery__img-3" src="/images/gallery__3.png" alt=""></a>
+              <a class="gallery__item gallery__item-4" href="/images/gallery__4.png"><img class="gallery__img gallery__img-4" src="/images/gallery__4.png" alt=""></a>
+              <a class="gallery__item gallery__item-5" href="/images/gallery__5.png"><img class="gallery__img gallery__img-5" src="/images/gallery__5.png" alt=""></a>
+            </div>
+          </div>
+          <div class="gallery__items slick2__item">
+            <div class="gallery__container">
+              <a class="gallery__item gallery__item-1" href="/images/gallery__1.png"><img class="gallery__img gallery__img-1" src="/images/gallery__1.png" alt=""></a>
+              <a class="gallery__item gallery__item-2" href="/images/gallery__2.png"><img class="gallery__img gallery__img-2" src="/images/gallery__2.png" alt=""></a>
+              <a class="gallery__item gallery__item-3" href="/images/gallery__3.png"><img class="gallery__img gallery__img-3" src="/images/gallery__3.png" alt=""></a>
+              <a class="gallery__item gallery__item-4" href="/images/gallery__4.png"><img class="gallery__img gallery__img-4" src="/images/gallery__4.png" alt=""></a>
+              <a class="gallery__item gallery__item-5" href="/images/gallery__5.png"><img class="gallery__img gallery__img-5" src="/images/gallery__5.png" alt=""></a>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+      
+    </div> -->
+
+    <!-- <div class="mclass">
+      <div class="mclass__inner container">
+        <h2 class="mclass__title title">Выбери мастер класс</h2>
+        <p class="mclass__desc">И приходи в воскресенье в хобби клуб</p>
+
+        <div class="mclass__slick slick3">
+          <a class="mclass__item popup-with-form" href="#mclass-form__1"><img class="mclass__img" src="/images/mclass__1.png" alt=""></a>
+          <a class="mclass__item popup-with-form" href="#mclass-form__2"><img class="mclass__img" src="/images/mclass__2.png" alt=""></a>
+          <a class="mclass__item popup-with-form" href="#mclass-form__3"><img class="mclass__img" src="/images/mclass__1.png" alt=""></a>
+          <a class="mclass__item popup-with-form" href="#mclass-form__4"><img class="mclass__img" src="/images/mclass__2.png" alt=""></a>
+        </div>
+      </div>
+
+      <div class="mclass__popup popup mfp-hide white-popup-block" id="mclass-form__1">
+        <div class="popup__content">
+          <img class="popup__img" src="/images/mclass__1.png" alt="">
+          <div class="popup__inner">
+            <h2 class="popup__title title">Ирис</h2>
+            <p class="popup__desc">Ирис - название цветку дал древнегреческий врач Гиппократ в честь богини Ириды. Согласно мифологии, она спускалась на землю по радуге, чтобы объявить людям волю Небес. Цветы были частью ее одежды. Они стали ассоциироваться с радугой, хорошими вестями и связью между двумя мирами: земным и небесным."</p>
+          </div>
+        </div>
+        <form class="form popup__form" action="">
+          <input class="form__input" id="form__name" type="text" name="name" autocomplete="on" placeholder="Имя и фамилия">
+          <input class="form__input" id="form__tel" type="tel" name="tel" autocomplete="on" required placeholder="Телефон">
+          <button class="form__btn btn" type="submit">Отправить</button>
+        </form>
+      </div>
+      <div class="mclass__popup popup mfp-hide white-popup-block" id="mclass-form__2">
+        <div class="popup__content">
+          <img class="popup__img" src="/images/mclass__1.png" alt="">
+          <div class="popup__inner">
+            <h2 class="popup__title title">Ирис</h2>
+            <p class="popup__desc">Ирис - название цветку дал древнегреческий врач Гиппократ в честь богини Ириды. Согласно мифологии, она спускалась на землю по радуге, чтобы объявить людям волю Небес. Цветы были частью ее одежды. Они стали ассоциироваться с радугой, хорошими вестями и связью между двумя мирами: земным и небесным."</p>
+          </div>
+        </div>
+        <form class="form popup__form" action="">
+          <input class="form__input" id="form__name" type="text" name="name" autocomplete="on" placeholder="Имя и фамилия">
+          <input class="form__input" id="form__tel" type="tel" name="tel" autocomplete="on" required placeholder="Телефон">
+          <button class="form__btn btn" type="submit">Отправить</button>
+        </form>
+      </div>    
+      <div class="mclass__popup popup mfp-hide white-popup-block" id="mclass-form__1">
+        <div class="popup__content">
+          <img class="popup__img" src="/images/mclass__1.png" alt="">
+          <div class="popup__inner">
+            <h2 class="popup__title title">Ирис</h2>
+            <p class="popup__desc">Ирис - название цветку дал древнегреческий врач Гиппократ в честь богини Ириды. Согласно мифологии, она спускалась на землю по радуге, чтобы объявить людям волю Небес. Цветы были частью ее одежды. Они стали ассоциироваться с радугой, хорошими вестями и связью между двумя мирами: земным и небесным."</p>
+          </div>
+        </div>
+        <form class="form popup__form" action="">
+          <input class="form__input" id="form__name" type="text" name="name" autocomplete="on" placeholder="Имя и фамилия">
+          <input class="form__input" id="form__tel" type="tel" name="tel" autocomplete="on" required placeholder="Телефон">
+          <button class="form__btn btn" type="submit">Отправить</button>
+        </form>
+      </div>
+      <div class="mclass__popup popup mfp-hide white-popup-block" id="mclass-form__2">
+        <div class="popup__content">
+          <img class="popup__img" src="/images/mclass__1.png" alt="">
+          <div class="popup__inner">
+            <h2 class="popup__title title">Ирис</h2>
+            <p class="popup__desc">Ирис - название цветку дал древнегреческий врач Гиппократ в честь богини Ириды. Согласно мифологии, она спускалась на землю по радуге, чтобы объявить людям волю Небес. Цветы были частью ее одежды. Они стали ассоциироваться с радугой, хорошими вестями и связью между двумя мирами: земным и небесным."</p>
+          </div>
+        </div>
+        <form class="form popup__form" action="">
+          <input class="form__input" id="form__name" type="text" name="name" autocomplete="on" placeholder="Имя и фамилия">
+          <input class="form__input" id="form__tel" type="tel" name="tel" autocomplete="on" required placeholder="Телефон">
+          <button class="form__btn btn" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div> -->
+
+    <!-- <div class="vrevie">
+      <div class="vrevie__inner container">
+        <h2 class="vrevie__title title">Видео отзывы</h2>
+        <div class="vrevie__slick slick4">
+          <a class="vrevie__item popup-youtube" href="https://youtube.com/embed/AOtC0zGhSEQ"><img class="vrevie__img" src="/images/vrevie__1.png" alt=""></a>
+          <a class="vrevie__item popup-youtube" href="https://youtube.com/embed/rDaAmmoG7HA"><img class="vrevie__img" src="/images/vrevie__2.png" alt=""></a>
+          <a class="vrevie__item popup-youtube" href="https://youtube.com/embed/QYt-6LM0nWc"><img class="vrevie__img" src="/images/vrevie__3.png" alt=""></a>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- <div class="trevie">
+      <div class="trevie__inner container">
+        <h2 class="trevie__title title">Отзывы из 2 гис</h2>
+        <p class="trevie__desc">Средняя оценка</p>
+        
+        <div class="load-more-container">    
+          <input class="trevie__load-more" id="load-more" type="checkbox"/>
+          <div class="trevie__list ">
+            <img class="trevie__img trevie__item" src="/images/trevie__1.png" alt="">
+            <img class="trevie__img trevie__item" src="/images/trevie__2.png" alt="">
+            <img class="trevie__img trevie__item" src="/images/trevie__3.png" alt="">
+            <img class="trevie__img trevie__item" src="/images/trevie__4.png" alt="">
+            <img class="trevie__img trevie__item" src="/images/trevie__5.png" alt="">
+            <img class="trevie__img trevie__item" src="/images/trevie__6.png" alt="">
+            <img class="trevie__img trevie__item" src="/images/trevie__7.png" alt="">
+            <img class="trevie__img trevie__item" src="/images/trevie__8.png" alt="">
+          </div>
+    
+        <label class="load-more-btn" for="load-more">
+            <span class="unloaded">Показать еще</span>
+            <span class="loaded">Меньше</span>
+          </label>  
+        </div>      
+
+      </div>
+    </div> -->
+
+    <div class="profcourse">
+      <div class="profcourse__inner container">
+        <div class="profcourse__list">
+
+
+          <a class="profcourse__item course course__1" href="#coursepopup">
+            <div class="course__up course-up">
+              <h3 class="course-up__title title__h3">Детский</h3>
+              <p class="course-up__desc">Начальные профессиональные знания, развитие мелкой моторики и колористики</p>
+              <ul class="course-up__list ">
+                <li class="course-up__item">Рисование</li>
+                <li class="course-up__item">ДПИ</li>
+                <li class="course-up__item">Лепка</li>
+              </ul>
+            </div>
+            <div class="course__down course-down">
+              <ul class="course-down__list">
+                <li class="course-down__item">3-10 лет</li>
+                <li class="course-down__item">12 Занятий</li>
+                <li class="course-down__item">22 000</li>
+              </ul>
+              <span class="course-down__video">Видео объяснение</span>
+            </div>
+          </a>
+          
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="course__popup popup mfp-hide white-popup-block" id="coursepopup">
+      <div class="popup__content">
+        <iframe class="popup__video" src="https://www.youtube.com/embed/izSRjdYln8E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <form class="form popup__form" action="">
+        <input class="form__input" id="form__name" type="text" name="name" autocomplete="on" placeholder="Имя и фамилия">
+        <input class="form__input" id="form__tel" type="tel" name="tel" autocomplete="on" required placeholder="Телефон">
+        <button class="form__btn btn" type="submit">Отправить</button>
+      </form>
+    </div>
+
+  </main>
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
