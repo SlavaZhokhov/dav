@@ -89,10 +89,9 @@ body {
   border-radius: 9px;
   font-weight: 600;
   font-size: 24px;
-  transition: transform 150ms linear;
 }
 .btn:hover {
-  transform: scale(1.02);
+  transform: scale(1);
 }
 
 .form {
@@ -424,6 +423,28 @@ body {
 .profcourse__item {
   max-width: 570px;
   min-height: 330px;
+}
+.profcourse__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.litecourse__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.litecourse__item {
+  margin-bottom: 30px;
+  max-width: 370px;
+  min-height: 330px;
+}
+.litecourse__item:not(:last-child) {
+  margin-right: 30px;
+}
+.litecourse__content {
+  display: flex;
+  flex-direction: column;
 }
 
 .course {

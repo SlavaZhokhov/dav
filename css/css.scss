@@ -90,9 +90,8 @@ body {
   border-radius: 9px;
   font-weight: 600;
   font-size: 24px;
-  transition: transform 150ms linear;
   &:hover {
-    transform: scale(1.02);
+    transform: scale(1.0);
   }
 }
 
@@ -441,6 +440,30 @@ body {
   &__item {
     max-width: 570px;
     min-height: 330px;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.litecourse {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &__item {
+    margin-bottom: 30px;
+    max-width: 370px;
+    min-height: 330px;
+  }
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
   }
 }
 
