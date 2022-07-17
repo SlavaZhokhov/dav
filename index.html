@@ -67,7 +67,7 @@
       </li>
       </ul>
 
-      <nav class="nav nav__desktop">
+      <nav class="header__nav nav nav__desktop">
         <ul class="nav__list">
           <li class="nav__item">
             <a class="nav__link" href="#">Главная</a>
@@ -91,7 +91,7 @@
         </div>
 
 
-    <a class="phone" href="tel:77774838373">
+    <a class="header__phone phone" href="tel:77774838373">
       <svg class="phone__svg">
         <use class="phone__icon" href="#phone"></use>
      </svg>
@@ -155,7 +155,7 @@
   <main class="main">
     <h1 class="hidden">Художественная школа Да Вични</h1>
  
-    <div class="hero">
+    <!-- <section class="hero">
       <div class="hero__inner container">
         <h2 class="hero__title title">Художественная школа <br>Да Винчи</h2>
         <p class="hero__desc">Хочешь стать дизайнером или архитектором — художественная школа  лучшая возможность начать свой путь</p>
@@ -165,9 +165,9 @@
           <button class="form__btn btn" type="submit">Отправить</button>
         </form>
       </div>
-    </div>
+    </section>
 
-    <div class="team">
+    <section class="team">
       <div class="team__inner container">
         <h2 class="team__title title">Наша команда</h2>
 
@@ -194,9 +194,38 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="gallery">
+    <section class="lssn">
+      <div class="lssn__inner container">
+        <h2 class="lssn__title title">Видео уроки</h2>
+        <p class="lssn__desc">Здесь собраны видео уроки,  с помощью которых можно освоить самые базовые умения из профессиональной школы. 
+          Наша задача - это воспитание поколения, которое сможет быть на равне с зарубежными специалистами, а это маленький толчок для вас, чтобы начать прямо сейчас. Берите лист и поехали !</p>
+        <ul class="lssn__content">
+          <h3 class="lssn__subtitle">Рисунок</h3>
+          <li class="lssn__box">
+            <iframe class="lssn__video" src="https://www.youtube.com/embed/vgKNL6gJBJ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="lssn__video" src="https://www.youtube.com/embed/vgKNL6gJBJ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="lssn__video" src="https://www.youtube.com/embed/vgKNL6gJBJ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </li>
+          <h3 class="lssn__subtitle">Живопись</h3>
+          <li class="lssn__box">
+            <iframe class="lssn__video" src="https://www.youtube.com/embed/vgKNL6gJBJ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="lssn__video" src="https://www.youtube.com/embed/vgKNL6gJBJ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="lssn__video" src="https://www.youtube.com/embed/vgKNL6gJBJ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </li>
+          <h3 class="lssn__subtitle">Композиция</h3>
+          <li class="lssn__box">
+            <iframe class="lssn__video" src="https://www.youtube.com/embed/vgKNL6gJBJ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="lssn__video" src="https://www.youtube.com/embed/vgKNL6gJBJ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="lssn__video" src="https://www.youtube.com/embed/vgKNL6gJBJ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <section class="gallery">
       <div class="gallery__inner container">
         <h2 class="gallery__title title">Фотогалерея</h2>
         <div class="gallery__slick slick2">
@@ -223,9 +252,9 @@
         </div>
       </div>
       
-    </div>
+    </section>
 
-    <div class="mclass">
+    <section class="mclass">
       <div class="mclass__inner container">
         <h2 class="mclass__title title">Выбери мастер класс</h2>
         <p class="mclass__desc">И приходи в воскресенье в хобби клуб</p>
@@ -294,9 +323,139 @@
           <button class="form__btn btn" type="submit">Отправить</button>
         </form>
       </div>
-    </div>
+    </section> -->
 
-    <div class="vrevie">
+    <section class="clnd">
+      <div class="clnd__inner container">
+        <h2 class="clnd__title title">Расписание занятий</h2>
+
+        <div class="clnd__tabs tabs">
+
+          <ul class="tabs__caption">
+            <li class="tabs__btn active">Гагарина</li>
+            <li class="tabs__btn">Мамыр</li>
+            <li class="tabs__btn">Нұркент</li>
+          </ul>
+          
+          <div class="tabs__content active"> 
+            <div class="cldr__table table">
+              <div class="table__cell table__time table__null"></div>
+              <div class="table__cell table__week">Понедельник</div>
+              <div class="table__cell table__week">Вторник</div>
+              <div class="table__cell table__week">Среда</div>
+              <div class="table__cell table__week">Четверг</div>
+              <div class="table__cell table__week">Пятница</div>
+              <div class="table__cell table__week">Суббота</div>
+              <div class="table__cell table__week">Воскресенье</div>
+              <div class="table__cell table__time"><span>9:30</span><span>|</span><span>11:00</span></div>
+              <div class="table__cell table__content table__blue">
+                <h4 class="table__subtitle">ИЗО</h4>
+                <span class="table__subtime">11:30-12:30</span>
+                <p class="table__subdesc">Изоброзительное искуство</p>
+                <span class="table__age">12+</span>
+              </div>
+              <div class="table__cell table__content table__green">
+                <h4 class="table__subtitle">ИЗО</h4>
+                <span class="table__subtime">11:30-12:30</span>
+                <p class="table__subdesc">Изоброзительное искуство</p>
+                <span class="table__age">12+</span>
+              </div>
+              <div class="table__cell table__content table__blue">
+                <h4 class="table__subtitle">ИЗО</h4>
+                <span class="table__subtime">11:30-12:30</span>
+                <p class="table__subdesc">Изоброзительное искуство</p>
+                <span class="table__age">12+</span>
+              </div>
+              <div class="table__cell table__content table__green">
+                <h4 class="table__subtitle">ИЗО</h4>
+                <span class="table__subtime">11:30-12:30</span>
+                <p class="table__subdesc">Изоброзительное искуство</p>
+                <span class="table__age">12+</span>
+              </div>
+              <div class="table__cell table__content table__blue">
+                <h4 class="table__subtitle">ИЗО</h4>
+                <span class="table__subtime">11:30-12:30</span>
+                <p class="table__subdesc">Изоброзительное искуство</p>
+                <span class="table__age">12+</span>
+              </div>
+              <div class="table__cell table__content table__green">
+                <h4 class="table__subtitle">ИЗО</h4>
+                <span class="table__subtime">11:30-12:30</span>
+                <p class="table__subdesc">Изоброзительное искуство</p>
+                <span class="table__age">12+</span>
+              </div>
+              <div class="table__cell table__content table__orange table__collapse">
+                <h4 class="table__subtitle">Хобби 
+                  Клуб</h4>
+                <span class="table__subtime"></span>
+                <p class="table__subdesc">Учащийся сам 
+                  решает,
+                  что хочет 
+                  сотворить -любой проект вместе с педагогом</p>
+                <span class="table__age"></span>
+              </div>
+              <div class="table__cell table__time"><span>9:30</span><span>|</span><span>11:00</span></div>
+              <div class="table__cell table__content table__blue"></div>
+              <div class="table__cell table__content table__green"></div>
+              <div class="table__cell table__content table__blue"></div>
+              <div class="table__cell table__content table__green"></div>
+              <div class="table__cell table__content table__blue"></div>
+              <div class="table__cell table__content table__green"></div>
+              <div class="table__cell table__content table__orange"></div>
+              <div class="table__cell table__time"><span>9:30</span><span>|</span><span>11:00</span></div>
+              <div class="table__cell table__content table__blue"></div>
+              <div class="table__cell table__content table__green"></div>
+              <div class="table__cell table__content table__blue"></div>
+              <div class="table__cell table__content table__green"></div>
+              <div class="table__cell table__content table__blue"></div>
+              <div class="table__cell table__content table__green"></div>
+              <div class="table__cell table__content table__orange"></div>
+              <div class="table__cell table__time"><span>9:30</span><span>|</span><span>11:00</span></div>
+              <div class="table__cell table__content table__blue"></div>
+              <div class="table__cell table__content table__green"></div>
+              <div class="table__cell table__content table__blue"></div>
+              <div class="table__cell table__content table__green"></div>
+              <div class="table__cell table__content table__blue"></div>
+              <div class="table__cell table__content table__green"></div>
+              <div class="table__cell table__content table__orange"></div>
+              <div class="table__cell table__time"><span>9:30</span><span>|</span><span>11:00</span></div>
+              <div class="table__cell table__content table__blue"></div>
+              <div class="table__cell table__content table__green"></div>
+              <div class="table__cell table__content table__blue"></div>
+              <div class="table__cell table__content table__green"></div>
+              <div class="table__cell table__content table__blue"></div>
+              <div class="table__cell table__content table__green"></div>
+              <div class="table__cell table__content table__orange"></div>
+              <div class="table__cell table__time"><span>9:30</span><span>|</span><span>11:00</span></div>
+              <div class="table__cell table__content table__blue"></div>
+              <div class="table__cell table__content table__green"></div>
+              <div class="table__cell table__content table__blue"></div>
+              <div class="table__cell table__content table__green"></div>
+              <div class="table__cell table__content table__blue"></div>
+              <div class="table__cell table__content table__green"></div>
+              <div class="table__cell table__content table__orange"></div>
+              <div class="table__cell table__time"><span>9:30</span><span>|</span><span>11:00</span></div>
+              <div class="table__cell table__content table__blue"></div>
+              <div class="table__cell table__content table__green"></div>
+              <div class="table__cell table__content table__blue"></div>
+              <div class="table__cell table__content table__green"></div>
+              <div class="table__cell table__content table__blue"></div>
+              <div class="table__cell table__content table__green"></div>
+              <div class="table__cell table__content table__orange"></div>
+            </div>
+          </div>
+          
+          <div class="tabs__content">
+            Содержимое второго блока
+          </div>        
+
+        </div>
+
+
+      </div>
+    </section>
+
+    <!-- <section class="vrevie">
       <div class="vrevie__inner container">
         <h2 class="vrevie__title title">Видео отзывы</h2>
         <div class="vrevie__slick slick4">
@@ -305,9 +464,9 @@
           <a class="vrevie__item popup-youtube" href="https://youtube.com/embed/QYt-6LM0nWc"><img class="vrevie__img" src="./images/vrevie__3.png" alt=""></a>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="trevie">
+    <section class="trevie">
       <div class="trevie__inner container">
         <h2 class="trevie__title title">Отзывы из 2 гис</h2>
         <p class="trevie__desc">Средняя оценка</p>
@@ -332,11 +491,31 @@
         </div>      
 
       </div>
-    </div>
+    </section>
 
-    <div class="profcourse">
+    <section class="profcourse">
       <div class="profcourse__inner container">
         <div class="profcourse__list">
+
+          <a class="profcourse__item course course__2" href="#profcourse__1">
+            <div class="course__up course-up">
+              <h3 class="course-up__title title__h3">Детский</h3>
+              <p class="course-up__desc">Начальные профессиональные знания, развитие мелкой моторики и колористики</p>
+              <ul class="course-up__list ">
+                <li class="course-up__item">Рисование</li>
+                <li class="course-up__item">ДПИ</li>
+                <li class="course-up__item">Лепка</li>
+              </ul>
+            </div>
+            <div class="course__down course-down">
+              <ul class="course-down__list">
+                <li class="course-down__item">3-10 лет</li>
+                <li class="course-down__item">12 Занятий</li>
+                <li class="course-down__item">22 000</li>
+              </ul>
+              <span class="course-down__video">Видео объяснение</span>
+            </div>
+          </a>
 
           <a class="profcourse__item course course__1" href="#profcourse__1">
             <div class="course__up course-up">
@@ -372,13 +551,13 @@
         </form>
       </div>
 
-    </div>
+    </section>
 
-    <div class="litecourse">
+    <section class="litecourse">
       <div class="litecourse__inner container">
         <div class="litecourse__list">
 
-          <a class="litecourse__item course course__1" href="#liteourse__1">
+          <a class="litecourse__item course course__3" href="#liteourse__1">
             <div class="course__up course-up">
               <h3 class="course-up__title title__h3">Детский</h3>
               <p class="course-up__desc">Начальные профессиональные знания, развитие мелкой моторики и колористики</p>
@@ -398,7 +577,7 @@
             </div>
           </a>
 
-          <a class="litecourse__item course course__1" href="#liteourse__1">
+          <a class="litecourse__item course course__4" href="#liteourse__1">
             <div class="course__up course-up">
               <h3 class="course-up__title title__h3">Детский</h3>
               <p class="course-up__desc">Начальные профессиональные знания, развитие мелкой моторики и колористики</p>
@@ -418,7 +597,7 @@
             </div>
           </a>
 
-          <a class="litecourse__item course course__1" href="#liteourse__1">
+          <a class="litecourse__item course course__5" href="#liteourse__1">
             <div class="course__up course-up">
               <h3 class="course-up__title title__h3">Детский</h3>
               <p class="course-up__desc">Начальные профессиональные знания, развитие мелкой моторики и колористики</p>
@@ -438,7 +617,7 @@
             </div>
           </a>
 
-          <a class="litecourse__item course course__1" href="#liteourse__1">
+          <a class="litecourse__item course course__6" href="#liteourse__1">
             <div class="course__up course-up">
               <h3 class="course-up__title title__h3">Детский</h3>
               <p class="course-up__desc">Начальные профессиональные знания, развитие мелкой моторики и колористики</p>
@@ -458,7 +637,7 @@
             </div>
           </a>
 
-          <a class="litecourse__item course course__1" href="#liteourse__1">
+          <a class="litecourse__item course course__7" href="#liteourse__1">
             <div class="course__up course-up">
               <h3 class="course-up__title title__h3">Детский</h3>
               <p class="course-up__desc">Начальные профессиональные знания, развитие мелкой моторики и колористики</p>
@@ -492,8 +671,45 @@
         </form>
       </div>
 
-    </div>
+    </section> -->
 
+    <section class="contact">
+      <div class="contact__inner container">
+        <h2 class="contact__title title">Контакты</h2>
+        <adress class="contact__contacts">
+          <ul class="contact__list">
+            <li class="contact__item">
+              <h3 class="contact__subtitle">Гагарина 236б, 2&nbsp;этаж</h3>
+              <a class="contact__phone phone" href="tel:77774838373">
+                <svg class="phone__svg">
+                  <use class="phone__icon" href="#phone"></use>
+               </svg>
+                <span class="phone__number">+7 777 483-83-73</span>
+              </a>
+            </li>
+            <li class="contact__item">
+              <h3 class="contact__subtitle">Гагарина 236б, 2&nbspэтаж</h3>
+              <a class="contact__phone phone" href="tel:77774838373">
+                <svg class="phone__svg">
+                  <use class="phone__icon" href="#phone"></use>
+               </svg>
+                <span class="phone__number">+7 777 483-83-73</span>
+              </a>
+            </li>
+            <li class="contact__item">
+              <h3 class="contact__subtitle">Гагарина 236б, 2&nbspэтаж</h3>
+              <a class="contact__phone phone" href="tel:77774838373">
+                <svg class="phone__svg">
+                  <use class="phone__icon" href="#phone"></use>
+               </svg>
+                <span class="phone__number">+7 777 483-83-73</span>
+              </a>
+            </li>
+          </ul>
+        </adress>
+        <iframe class="contact__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae12ad7376d4c2bede0e1664cf026598aa80b93c555d181a4d34b737c2bc9fab9&amp;source=constructor" width="100%" height="300" frameborder="0"></iframe>
+      </div>
+    </section>
 
   </main>
 

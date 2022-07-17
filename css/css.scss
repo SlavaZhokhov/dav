@@ -108,7 +108,6 @@ body {
   }
 }
 
-// header
 .header {
   display: flex;
   background: #3E84B7;
@@ -168,7 +167,7 @@ body {
     height: 25px;
     font-weight: 400;
     color: white;
-    box-shadow: 0px 3px 0px 0px #3E84B7;
+    box-shadow: none;
     transition: box-shadow 150ms linear;
     &:hover {
       box-shadow: 0px 3px 0px 0px #FFE600;
@@ -195,7 +194,7 @@ body {
   &__number {
     height: 25px;
     transition: box-shadow 150ms linear;
-    box-shadow: 0px 3px 0px 0px #3E84B7;
+    box-shadow: none;
     &:hover {
       box-shadow: 0px 3px 0px 0px #FFE600;
     }
@@ -211,7 +210,6 @@ body {
   }
 }
 
-// hero
 .hero {
   background-image: linear-gradient(113.09deg, #87CDFF 12.99%, #2C79B1 91.21%);
   &__inner {
@@ -233,7 +231,6 @@ body {
   } 
 }
 
-//team
 .team {
   background: #0E273E;
   padding-top: 40px;
@@ -246,6 +243,55 @@ body {
   &__title {
     text-align: center;
     color: white;
+  }
+}
+
+.lssn {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  &__desc {
+    max-width: 600px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__subtitle {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  &__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    box-shadow: 0px 6px 0px 0px #3E84B7;
+  }
+  &__video:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 979px) {
+  .lssn {
+    &__video {
+      margin-bottom: 20px;
+    }
   }
 }
 
@@ -395,6 +441,79 @@ body {
   }
 }
 
+.clnd {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  &__title {
+    text-align: center;
+  }
+}
+
+.tabs {
+  &__caption {
+    display: flex;
+    justify-content: center;
+    min-width: 100%;
+    margin-bottom: 40px;
+  }
+  &__btn {
+    display: inline-block;
+    height: 25px;
+    padding-bottom: 5px;
+    font-size: 24px;
+    font-weight: 400;
+    box-shadow: 0px 3px 0px 0px white;
+    transition: box-shadow 150ms linear;
+    cursor: pointer;
+    &:hover {
+      box-shadow: 0px 3px 0px 0px #FFE600;
+    }
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  } 
+  &__content {
+    display: none; 
+  }
+  &__content.active {
+    display: block;
+  }
+}
+
+.table {
+  display: grid;
+  grid-template-columns: 70px 155px 155px 155px 155px 155px 155px 155px;
+  justify-content: center;
+  gap: 2px;
+  overflow-y:scroll;
+  &__cell {
+    padding: 10px 0 10px 10px;
+  }
+  &__week {
+    background: #131660;
+    color: white;
+    text-align: center;
+  }
+  &__time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #131660;
+    color: white;
+  }
+  &__null {
+    background: none;
+  }
+  &__blue {background: #C6F1FF;}
+  &__green {background: #BEC4FF}
+  &__orange {background: #FFD9BD;}
+  &__subtitle {font-size: 18px; font-weight: 700; margin-bottom: 10px;}
+  &__subtime {display: inline-block; font-size: 14px; font-weight: 500; margin-bottom: 10px;}
+  &__subdesc {font-size: 12px; margin-bottom: 10px;}
+  &__age {font-size: 18px; font-weight: 700;}
+}
+
 .vrevie {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -431,7 +550,46 @@ body {
   display: none;
 }
 
+.contact {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: linear-gradient(104.78deg, #0D578C 8.83%, #87CCFF 89.69%);
+  &__title {
+    color: white;
+    text-align: center;
+  }
+  &__contacts {
+    display: block;
+    margin-bottom: 30px;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    list-style-type: circle;
+    color: white;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  &__subtitle {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  &__phone {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  &__map {
+    border-radius: 9px;
+  }
+}
+
 .profcourse {
+  padding-top: 40px;
+  padding-bottom: 40px;
   &__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -448,6 +606,8 @@ body {
 }
 
 .litecourse {
+  padding-top: 40px;
+  padding-bottom: 40px;
   &__list {
     display: flex;
     flex-wrap: wrap;
@@ -457,8 +617,6 @@ body {
     margin-bottom: 30px;
     max-width: 370px;
     min-height: 330px;
-  }
-  &__item:not(:last-child) {
     margin-right: 30px;
   }
   &__content {
@@ -476,9 +634,6 @@ body {
   border-top-right-radius: 9px;
   color: white;
   cursor: pointer;
-  &__1 {
-    background: linear-gradient(304.86deg, #FFC700 4.85%, #FF6B00 100%);
-  }
   &-up {
     padding: 25px 25px 0 25px;
     &__title {
@@ -518,6 +673,13 @@ body {
       background: #001039;
     }
   }
+  &__1 {background: linear-gradient(304.86deg, #FFC700 4.85%, #FF6B00 100%);}
+  &__2 {background: linear-gradient(127.81deg, #6F01B3 0%, #0985F7 100%);}
+  &__3 {background: linear-gradient(127.82deg, #D437FC 0%, #15129E 100%);}
+  &__4 {background: linear-gradient(127.82deg, #007CEE 0%, #02934D 100%);}
+  &__5 {background: linear-gradient(127.82deg, #996A0D 0%, #EBAF04 100%);}
+  &__6 {background: linear-gradient(126.57deg, #FF5050 1.89%, #BD00FF 100%);}
+  &__7 {background: linear-gradient(127.82deg, #0094FF 0%, #26129E 100%);}
 }
 
 @media (max-width: 1200px) {
@@ -635,7 +797,7 @@ body {
     margin-right: 0;
   }
 
-  .phone {
+  .header__phone {
     display: none;
   }
 
@@ -681,6 +843,21 @@ body {
       justify-items: center
     }
   }  
+
+  .lssn {
+    &__content {
+      align-items: center;
+    }
+    &__box {
+      flex-direction: column;
+      max-width: 300px;
+    }
+    &__video:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+  
 }
 
 @media (max-width: 640px) {
@@ -716,6 +893,12 @@ body {
     &__img {
       max-height: 100%;
     }
+  }
+
+  .tabs {
+    &__btn {
+      font-size: 16px;
+    } 
   }
 
   .trevie {
@@ -772,6 +955,22 @@ body {
       display: none;
     }
   }
+  .contact {
+    &__list {
+    flex-direction: column;
+    align-items: center;
+    }
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__item:not(:last-child) {
+      margin-right: 0px;
+      margin-bottom: 30px;
+    }
+  }
+
 }
 
 @media (max-width: 414px) {
@@ -791,5 +990,6 @@ body {
     grid-column-start: auto;
     grid-column-end: auto;
   }
+
 }
 
