@@ -231,6 +231,40 @@ body {
   } 
 }
 
+.why {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #0E273E;
+  color: white;
+  &__title {
+    text-align: center;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100px;
+    padding-left: 110px;
+    &:not(:last-child) {margin-right: 10px;}
+    &-1 {background: url(../images/why__1.svg) left center no-repeat;}
+    &-2 {background: url(../images/why__2.svg) left center no-repeat;}
+    &-3 {background: url(../images/why__3.svg) left center no-repeat;}
+  }
+  &__subtitle {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 10px;
+  }
+  &__subdesc {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
 .team {
   background: #0E273E;
   padding-top: 40px;
@@ -249,7 +283,7 @@ body {
 .about {
   padding-top: 40px;
   padding-bottom: 40px;
-  background: url(../images/about__background.png) 100% no-repeat;
+  background: url(../images/about__background.png) top center/cover no-repeat;
   &__title {
     text-align: center;
   }
@@ -425,7 +459,7 @@ body {
 .mclass {
   padding-top: 40px;
   padding-bottom: 40px;
-  background: url(../images/mclass__background.png) 100% no-repeat;
+  background: url(../images/mclass__background.png) center/cover no-repeat;
   &__title {
     margin-bottom: 20px;
     text-align: center;
@@ -633,7 +667,7 @@ body {
 .profcourse {
   padding-top: 40px;
   padding-bottom: 40px;
-  background: url(../images/profcourse__background.png) 100% no-repeat;
+  background: url(../images/profcourse__background.png) top center/cover no-repeat;
 
   &__title {
     text-align: center;
@@ -677,6 +711,7 @@ body {
     flex-direction: column;
   }
 }
+
 
 .course {
   display: flex;
@@ -990,10 +1025,24 @@ details[open] summary ~ *{
     margin-bottom: 25px;
   }
 
-  .hero__inner {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background: none;
+  .hero {
+    &__inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      background: none;
+    }
+    &__title {
+      text-align: center;
+    } 
+    &__desc {
+      text-align: center;
+    }
+    &__form {
+      min-width: 300px;
+    }
   }
 
   .about {
@@ -1018,9 +1067,32 @@ details[open] summary ~ *{
       font-size: 14px;
     }
   }
+  
+  .litecourse {
+    &__list {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__item {
+      margin-right: 0;
+    }
+  }
 }
 
 @media (max-width: 767px) {
+  .why {
+    &__list {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__item {
+      &:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
   .gallery__container {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;

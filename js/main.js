@@ -10,7 +10,7 @@ window.addEventListener('DOMContentLoaded', function() {
     });
 
     $('.team__slick').slick({
-      // lazyload: true,
+      lazyload: true,
       centerMode: true,
       variableWidth: true,
       infinite: true,
@@ -18,10 +18,12 @@ window.addEventListener('DOMContentLoaded', function() {
     });
 
     $('.gallery__slick').slick({
+      lazyload: true,
       slidesToScroll: 1,
     });
 
     $('.mclass__slick').slick({
+      lazyload: true,
       slidesToShow: 2,
       slidesToScroll: 2,
       responsive: [
@@ -72,6 +74,7 @@ window.addEventListener('DOMContentLoaded', function() {
     });
 
     $('.vrevie__slick').slick({
+      lazyload: true,
       slidesToScroll: 1,
       slidesToShow: 3,
       responsive: [

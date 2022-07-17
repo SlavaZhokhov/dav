@@ -225,6 +225,48 @@ body {
   max-width: 380px;
 }
 
+.why {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #0E273E;
+  color: white;
+}
+.why__title {
+  text-align: center;
+}
+.why__list {
+  display: flex;
+  justify-content: space-between;
+}
+.why__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100px;
+  padding-left: 110px;
+}
+.why__item:not(:last-child) {
+  margin-right: 10px;
+}
+.why__item-1 {
+  background: url(../images/why__1.svg) left center no-repeat;
+}
+.why__item-2 {
+  background: url(../images/why__2.svg) left center no-repeat;
+}
+.why__item-3 {
+  background: url(../images/why__3.svg) left center no-repeat;
+}
+.why__subtitle {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.why__subdesc {
+  font-size: 18px;
+  font-weight: 600;
+}
+
 .team {
   background: #0E273E;
   padding-top: 40px;
@@ -243,7 +285,7 @@ body {
 .about {
   padding-top: 40px;
   padding-bottom: 40px;
-  background: url(../images/about__background.png) 100% no-repeat;
+  background: url(../images/about__background.png) top center/cover no-repeat;
 }
 .about__title {
   text-align: center;
@@ -409,7 +451,7 @@ body {
 .mclass {
   padding-top: 40px;
   padding-bottom: 40px;
-  background: url(../images/mclass__background.png) 100% no-repeat;
+  background: url(../images/mclass__background.png) center/cover no-repeat;
 }
 .mclass__title {
   margin-bottom: 20px;
@@ -635,7 +677,7 @@ body {
 .profcourse {
   padding-top: 40px;
   padding-bottom: 40px;
-  background: url(../images/profcourse__background.png) 100% no-repeat;
+  background: url(../images/profcourse__background.png) top center/cover no-repeat;
 }
 .profcourse__title {
   text-align: center;
@@ -1018,9 +1060,21 @@ details[open] summary ~ * {
   }
 
   .hero__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-top: 50px;
     padding-bottom: 50px;
     background: none;
+  }
+  .hero__title {
+    text-align: center;
+  }
+  .hero__desc {
+    text-align: center;
+  }
+  .hero__form {
+    min-width: 300px;
   }
 
   .about__box {
@@ -1043,8 +1097,25 @@ details[open] summary ~ * {
     text-align: center;
     font-size: 14px;
   }
+
+  .litecourse__list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .litecourse__item {
+    margin-right: 0;
+  }
 }
 @media (max-width: 767px) {
+  .why__list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .why__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
   .gallery__container {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
