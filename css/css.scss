@@ -311,11 +311,11 @@ body {
   }
   &-next {
     right: 0;
-    background: url(/images/slick__next.svg) 0 0 no-repeat;
+    background: url(../images/slick__next.svg) 0 0 no-repeat;
   }
   &-prev {
     left: 0;
-    background: url(/images/slick__prev.svg) 0 0 no-repeat;
+    background: url(../images/slick__prev.svg) 0 0 no-repeat;
     z-index: 1;
   }
 }
@@ -387,7 +387,7 @@ body {
 .mclass {
   padding-top: 40px;
   padding-bottom: 40px;
-  background: url(/images/mclass__background.png) center center no-repeat;
+  background: url(../images/mclass__background.png) center center no-repeat;
   &__title {
     margin-bottom: 20px;
     text-align: center;
@@ -542,7 +542,7 @@ body {
     margin-bottom: 20px;
   }
   &__desc {
-    background: url(/images/trevie__star.png) center right no-repeat;
+    background: url(../images/trevie__star.png) center right no-repeat;
     padding-right: 146px;
   }
   &__list {
@@ -595,7 +595,7 @@ body {
 .profcourse {
   padding-top: 40px;
   padding-bottom: 40px;
-  background: url(/images/profcourse__background.png) top center no-repeat;
+  background: url(../images/profcourse__background.png) top center no-repeat;
 
   &__title {
     text-align: center;
