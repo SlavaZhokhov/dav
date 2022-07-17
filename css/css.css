@@ -455,6 +455,10 @@ body {
 .tabs__btn:not(:last-child) {
   margin-right: 30px;
 }
+.tabs__btn.active {
+  box-shadow: 0px 3px 0px 0px #FFE600;
+  font-weight: 600;
+}
 .tabs__content {
   display: none;
 }
@@ -593,6 +597,10 @@ body {
 .profcourse {
   padding-top: 40px;
   padding-bottom: 40px;
+  background: url(/images/profcourse__background.png) top center no-repeat;
+}
+.profcourse__title {
+  text-align: center;
 }
 .profcourse__list {
   display: grid;
@@ -611,6 +619,11 @@ body {
 .litecourse {
   padding-top: 40px;
   padding-bottom: 40px;
+  background: #060013;
+}
+.litecourse__title {
+  color: white;
+  text-align: center;
 }
 .litecourse__list {
   display: flex;
@@ -991,11 +1004,34 @@ details[open] summary ~ * {
     grid-column-end: span 2;
   }
 
+  .course-up__title {
+    font-size: 24px;
+  }
+  .course-up__desc {
+    font-size: 14px;
+  }
+  .course-up__list {
+    font-size: 14px;
+  }
+  .course-down {
+    font-size: 14px;
+  }
+
   .profcourse__list {
     grid-template-columns: 1fr;
     justify-items: center;
   }
+  .profcourse__item {
+    min-height: 270px;
+  }
 
+  .litecourse__item {
+    min-height: 270px;
+  }
+
+  .lssn__desc {
+    font-size: 18px;
+  }
   .lssn__content {
     align-items: center;
   }
@@ -1008,12 +1044,19 @@ details[open] summary ~ * {
     margin-bottom: 20px;
   }
 
+  .mclass__desc {
+    font-size: 18px;
+  }
+
   .footer__inner {
     flex-direction: column;
     align-items: center;
   }
   .footer__form {
     margin-bottom: 30px;
+  }
+  .footer__phone {
+    font-size: 30px;
   }
 }
 @media (max-width: 640px) {

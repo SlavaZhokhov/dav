@@ -472,6 +472,11 @@ body {
       margin-right: 30px;
     }
   } 
+  &__btn.active {
+    box-shadow: 0px 3px 0px 0px #FFE600;
+  font-weight: 600;
+
+  } 
   &__content {
     display: none; 
   }
@@ -590,6 +595,11 @@ body {
 .profcourse {
   padding-top: 40px;
   padding-bottom: 40px;
+  background: url(/images/profcourse__background.png) top center no-repeat;
+
+  &__title {
+    text-align: center;
+  }
   &__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -608,6 +618,11 @@ body {
 .litecourse {
   padding-top: 40px;
   padding-bottom: 40px;
+  background: #060013;
+  &__title {
+    color: white;
+    text-align: center;
+  }
   &__list {
     display: flex;
     flex-wrap: wrap;
@@ -961,14 +976,45 @@ details[open] summary ~ *{
     grid-column-end: span 2;
   }
 
+  .course {
+    &-up {
+      &__title {
+        font-size: 24px;
+      }
+      &__desc {
+        font-size: 14px;
+      }
+      &__list {
+        font-size: 14px;
+      }
+    }
+    &-down {
+      font-size: 14px;
+    }
+
+  }
+  
+
   .profcourse {
     &__list {
       grid-template-columns: 1fr;
       justify-items: center
     }
+    &__item {
+      min-height: 270px;
+    }
   }  
 
+  .litecourse {
+    &__item {
+      min-height: 270px;
+    }
+  }
+
   .lssn {
+    &__desc {
+      font-size: 18px;
+    }
     &__content {
       align-items: center;
     }
@@ -981,6 +1027,14 @@ details[open] summary ~ *{
       margin-bottom: 20px;
     }
   }
+
+  .mclass {
+    &__desc {
+      font-size: 18px;
+    }
+  }
+
+
   .footer {
     &__inner {
       flex-direction: column;
@@ -988,6 +1042,9 @@ details[open] summary ~ *{
     }
     &__form {
       margin-bottom: 30px;
+    }
+    &__phone {
+      font-size: 30px;
     }
   }
 }
