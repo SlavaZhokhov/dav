@@ -240,6 +240,44 @@ body {
   color: white;
 }
 
+.about {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: url(../images/about__background.png) 100% no-repeat;
+}
+.about__title {
+  text-align: center;
+}
+.about__box {
+  display: flex;
+  justify-content: space-between;
+}
+.about__list {
+  max-width: 600px;
+}
+.about__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.about__subtitle {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.about__backcolor {
+  background: linear-gradient(92.9deg, #FFE600 44.43%, #FFB800 88.06%);
+  border-radius: 9px;
+  padding: 5px;
+}
+.about__subdesc {
+  font-size: 18px;
+  font-weight: 700;
+}
+.about__video {
+  min-width: 50%;
+  margin-bottom: 10px;
+  border-bottom: 3px solid linear-gradient(92.9deg, #FFE600 44.43%, #FFB800 88.06%);
+}
+
 .lssn {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -371,7 +409,7 @@ body {
 .mclass {
   padding-top: 40px;
   padding-bottom: 40px;
-  background: url(../images/mclass__background.png) center center no-repeat;
+  background: url(../images/mclass__background.png) 100% no-repeat;
 }
 .mclass__title {
   margin-bottom: 20px;
@@ -597,7 +635,7 @@ body {
 .profcourse {
   padding-top: 40px;
   padding-bottom: 40px;
-  background: url(../images/profcourse__background.png) top center no-repeat;
+  background: url(../images/profcourse__background.png) 100% no-repeat;
 }
 .profcourse__title {
   text-align: center;
@@ -984,6 +1022,27 @@ details[open] summary ~ * {
     padding-bottom: 50px;
     background: none;
   }
+
+  .about__box {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about__list {
+    margin-bottom: 30px;
+  }
+  .about__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about__subtitle {
+    text-align: center;
+    font-size: 18px;
+  }
+  .about__subdesc {
+    text-align: center;
+    font-size: 14px;
+  }
 }
 @media (max-width: 767px) {
   .gallery__container {
@@ -1173,5 +1232,12 @@ details[open] summary ~ * {
   .gallery__item:nth-child(5) {
     grid-column-start: auto;
     grid-column-end: auto;
+  }
+
+  .about__subtitle {
+    font-size: 18px;
+  }
+  .about__subdesc {
+    font-size: 14px;
   }
 }

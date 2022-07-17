@@ -246,6 +246,44 @@ body {
   }
 }
 
+.about {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: url(../images/about__background.png) 100% no-repeat;
+  &__title {
+    text-align: center;
+  }
+  &__box {
+    display: flex;
+    justify-content: space-between
+  }
+  &__list {
+    max-width: 600px;
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  &__subtitle {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  &__backcolor {
+    background: linear-gradient(92.9deg, #FFE600 44.43%, #FFB800 88.06%);
+    border-radius: 9px;
+    padding: 5px;
+  }
+  &__subdesc {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  &__video {
+    min-width: 50%;
+    margin-bottom: 10px;
+    border-bottom: 3px solid linear-gradient(92.9deg, #FFE600 44.43%, #FFB800 88.06%);
+  }
+}
+
 .lssn {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -387,7 +425,7 @@ body {
 .mclass {
   padding-top: 40px;
   padding-bottom: 40px;
-  background: url(../images/mclass__background.png) center center no-repeat;
+  background: url(../images/mclass__background.png) 100% no-repeat;
   &__title {
     margin-bottom: 20px;
     text-align: center;
@@ -595,7 +633,7 @@ body {
 .profcourse {
   padding-top: 40px;
   padding-bottom: 40px;
-  background: url(../images/profcourse__background.png) top center no-repeat;
+  background: url(../images/profcourse__background.png) 100% no-repeat;
 
   &__title {
     text-align: center;
@@ -957,6 +995,29 @@ details[open] summary ~ *{
     padding-bottom: 50px;
     background: none;
   }
+
+  .about {
+    &__box {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__list {
+      margin-bottom: 30px;
+    }
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__subtitle {
+      text-align: center;
+      font-size: 18px;
+    }
+    &__subdesc {
+      text-align: center;
+      font-size: 14px;
+    }
+  }
 }
 
 @media (max-width: 767px) {
@@ -1178,6 +1239,15 @@ details[open] summary ~ *{
   .gallery__item:nth-child(5) {
     grid-column-start: auto;
     grid-column-end: auto;
+  }
+
+  .about {
+    &__subtitle {
+      font-size: 18px;
+    }
+    &__subdesc {
+      font-size: 14px;
+    }
   }
 
 }
