@@ -210,7 +210,7 @@ body {
 .hero__inner {
   padding-top: 300px;
   padding-bottom: 300px;
-  background: no-repeat right center url(/images/hero__background.png);
+  background: no-repeat right center url(../images/hero__background.png);
 }
 .hero__title {
   max-width: 470px;
